@@ -1,0 +1,52 @@
+
+(function ($) {
+    "use strict";
+
+    /*[ Load page ]
+    ===========================================================*/
+    $(".animsition").animsition({
+        inClass: 'fade-in',
+        outClass: 'fade-out',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        loading: true,
+        loadingParentElement: 'html',
+        loadingClass: 'animsition-loading-1',
+        loadingInner: '<div data-loader="ball-scale"></div>',
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'html',
+        transition: function(url){ window.location.href = url; }
+    });
+    
+
+    /*[ Block2 button wishlist ]
+    ===========================================================*/
+    $('.block2-btn-addwishlist').on('click', function(e){
+        e.preventDefault();
+        $(this).addClass('block2-btn-towishlist');
+        $(this).removeClass('block2-btn-addwishlist');
+        $(this).off('click');
+    });
+    /*[ Block3 button wishlist ]
+    ===========================================================*/
+    $('.block3-btn-addwishlist').on('click', function(e){
+        e.preventDefault();
+        $(this).addClass('block3-btn-towishlist');
+        $(this).removeClass('block3-btn-addwishlist');
+        $(this).off('click');
+    });
+     /*[ Block4 button wishlist ]
+    ===========================================================*/
+    $('.block4-btn-addwishlist').on('click', function(e){
+        e.preventDefault();
+        $(this).addClass('block4-btn-towishlist');
+        $(this).removeClass('block4-btn-addwishlist');
+        $(this).off('click');
+    });
+})(jQuery);

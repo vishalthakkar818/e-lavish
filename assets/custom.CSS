@@ -1,0 +1,100 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,900|Poppins:400,700,900|Oswald:300,300i');
+body, html {font-family:'Montserrat', sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family:'Oswald', sans-serif;text-transform:uppercase;}
+/* TYPOGRAPHY & COLORS */
+a {color:#666666;}
+a:hover {color:#000;}
+h4 > small {font-family: 'Montserrat', sans-serif;font-size: 15px;color: #222222;line-height: 1.5;text-transform: uppercase;}
+p {color:#888888;}
+.container {padding-left:4em !important;padding-right:4em !important;}
+@media only screen and (max-width: 992px) { .container {padding-left:1em !important;padding-right:1em !important;}}
+.text-primary {color: #0324fc;}
+
+/* HEADER */
+.header { height: 110px;}
+.topbar {height:30px;background-color:rgba(212,177,101,1);color:#002976;font-size: calc(.5rem + .5vw);}
+.headphone > h5 {font-family:'Oswald';line-height:.9 !important;}
+.headphone > h5 > small {font-family:'Montserrat'}
+.search-product {border: none;background-color: rgba(255,255,255,0);}
+.header i {color:#000;}
+ul.topbar-list {height:100%;display:flex;}
+ul.topbar-list > li {border-right:2px solid #fff;height:100%;display:flex;align-items:center;padding: 0 20px;}
+ul.topbar-list > li:last-child {border-right:none;padding-right:0}
+@media only screen and (max-width: 991px) {#header{height:75px;}}
+
+
+/* PAGE MARKETING */
+#pageMarketing i {color:#999999;}
+.card-title {color:#000;font-weight:lighter;}
+
+/* MENU */
+.navbar-brand, .navbar {font-size: calc(.5rem + .5vw) !important;}
+
+/* FEATURED CATEGORIES */
+.btn-cat {font-family: Oswald;border-color: rgb(255, 255, 255);background-color:rgba(94, 74, 55,0.25)}
+.btn-cat:hover {background-color:rgba(255,255,255,0.9);}
+
+/* PRODUCT RIBBONS */
+.ribbon{width:200px;} 
+.ribbon.ribbon1{background:rgba(218,83,88,0.9);}
+.ribbon.ribbon1::after{border-top-color: rgba(218,83,88,1);}
+.ribbon.ribbon2{background:rgba(243,158,72,0.9);}
+.ribbon.ribbon2::after{border-top-color: rgba(243,158,72,1);}
+.ribbon.ribbon3{background:rgba(173,206,94,0.9);}
+.ribbon.ribbon3::after{border-top-color: rgba(173,206,94,1);}
+.ribbon.ribbon4{background:rgba(49,143,136,0.9);}
+.ribbon.ribbon4::after{border-top-color: rgba(49,143,136,1);}
+
+/* PRODUCT DETAILS LABELS */
+.speciallabel {background-color:rgba(218,83,88,0.9);color:#fff;}
+.displaylabel {background-color:rgba(243,158,72,0.9);color:#fff;}
+
+/* Button Colors */
+.btn-primary{background:rgba(0,41,118,0.9);border:1px solid rgba(0,41,118,0.9);color:#fff;}
+.btn-primary:hover{background:rgba(89,71,48,1);border:1px solid rgba(89,71,48,1);color:#fff;}
+.btn-danger{background:rgba(218,83,88,0.9);border:1px solid rgba(218,83,88,0.9);color:#fff;}
+.btn-danger:hover{background:rgba(218,83,88,1);border:1px solid rgba(218,83,88,1);color:#fff;}
+.btn-warning{background:rgba(243,158,72,0.9);border:1px solid rgba(243,158,72,0.9);color:#fff;}
+.btn-warning:hover{background:rgba(243,158,72,1);border:1px solid rgba(243,158,72,1);color:#fff;}
+.btn-success{background:rgba(173,206,94,0.9);border:1px solid rgba(243,158,72,1);color:#fff;}
+.btn-success:hover{background:rgba(173,206,94,1);border:1px solid rgba(173,206,94,1);color:#fff;}
+.btn-info{background:rgba(49,143,136,0.9);border:1px solid rgba(49,143,136,0.9);color:#fff;}
+.btn-info:hover{background:rgba(49,143,136,1);border:1px solid rgba(49,143,136,1);color:#fff;}
+a.btn.btn-primary.sbutton2 {color:#fff;}
+
+/* LOCATION */
+.list-employee {max-width:250px;}
+
+/*Footer*/
+footer {background-color: #002976;color:#fff; }
+footer i {color:#FFF;}
+#footer-lower {border-top:3px solid #fff;}
+.list-pipe > li:not(:last-child)::after {content: "|";margin: 0 5px 0 10px;}
+footer a {color:#fff}
+footer a:hover {color:rgba(255,255,255,0.75)}
+footer strong {color:#fff;}
+footer p.lead {color:#fff;}
+@media screen and (max-width: 1023px) {#footer-lower > ul {width:100% !important;}}
+/* OFFCANVAS PRODUCT MENU */
+@media screen and (max-width: 767px) {
+.row-offcanvas { position: relative; -webkit-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out; }
+.row-offcanvas-right { right: 0; }
+.row-offcanvas-left { left: 0; }
+.row-offcanvas-right .sidebar-offcanvas { right: -60%; /* 6 columns */ }
+.row-offcanvas-left .sidebar-offcanvas { left: -60%; /* 6 columns */ }
+.row-offcanvas-right.active { right: 60%; /* 6 columns */ }
+.row-offcanvas-left.active { left: 60%; /* 6 columns */ }
+.sidebar-offcanvas { position: absolute; top: 0; width: 60%; /* 6 columns */ }
+}
+
+.switch-field input:checked + label {
+ background-color: #584731;
+}
+.arrows { cursor:pointer; color:#584731; }
+
+/* SERACH RESTULTS */
+.product p.title {white-space:normal;font-size: calc(.7rem + .2vw);}
+p.price {margin-top:10px;}
+
+

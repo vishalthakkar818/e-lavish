@@ -1,0 +1,51 @@
+// wishlist and compare counts   
+function updateCartCounts($this) {
+	var whichList = $this.data('whichlist'),
+		productID = $this.data('productid'),
+  isChecked = $this.data('checked'),
+		rNumber = 1 + Math.floor(Math.random() * 100000),
+		rLinkAdd = '?jq=' + rNumber;
+	// cross browser support for checking checked status
+ if (whichList == 'wishlist'){
+  if($this.data('checked') == 0){
+   addOrRemove = 'add';
+   $this.data('checked','1');
+   document.getElementById('icon_'+productID).className = 'fas fa-check';
+   document.getElementById('icon2_'+productID).className = 'fas fa-check';
+   if ($('#wishListAdd_'+productID).length){
+    var titleString = document.getElementById('wishListAdd_'+productID).title;
+    var replacedString = titleString.replace('Custom Add to','Update in');
+    document.getElementById('wishListAdd_'+productID).title = replacedString;
+   }
+  } else {
+   addOrRemove = 'remove';
+   $this.data('checked','0');
+   document.getElementById('icon_'+productID).className = 'fas fa-heart';
+   document.getElementById('icon2_'+productID).className = 'fas fa-heart';
+   if ($('#wishListAdd_'+productID).length){
+    var titleString = document.getElementById('wishListAdd_'+productID).title;
+    var replacedString = titleString.replace('Update in ','Custom Add to ');
+    document.getElementById('wishListAdd_'+productID).title = replacedString;
+   }
+  };
+ }
+	$.get('/Products/setSessionValues.cfm'+rLinkAdd+'&whichOne='+whichList+'&addOrRemove='+addOrRemove+'&productID='+productID);
+	$.get('/Products/wishListStats.cfm'+rLinkAdd, function(countString) {
+	 var countArr = countString.split(',');
+		console.log(countArr);
+	 $('#cartCount').text(countArr[0]);
+	 $('#cartCount2').text(countArr[0]);
+	});
+}
+
+// wishlist and compare check / uncheck
+$(function() {
+	//checkbox from search Page
+	$('a.checkAddRemove').click(function(){
+		updateCartCounts($(this));
+ }); 
+	$('a.wlLocked').click(function(){
+		alert("This item cannot be added because your wish list is locked!");
+ }); 
+});
+

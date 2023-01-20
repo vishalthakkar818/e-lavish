@@ -150,8 +150,6 @@ a.underlined {text-decoration-line:underline !important;}
 .displaylabel {text-transform:uppercase;font-size:.75em;padding:5px 10px;border-radius:0px;display:inline-block;font-weight:bold;margin-bottom:10px;}
 .sku-text {font-size:1em;color:#888888;}
 .details-middle > ul,.details-middle > p {font-size:1.25em}
-@media (min-width: 576px){.col-sm-auto {-ms-flex: 0 0 auto;flex: 0 0 auto;width: auto;max-width: 50%;}}
-
 /*Parallax*/
 .parallax0 {background-attachment: fixed;background-position: center 0;background-repeat: no-repeat;background-size: cover;}
 .overlay0 {background-color: rgba(0,0,0,0.2);}
@@ -341,10 +339,7 @@ button:hover {cursor:pointer;}
  margin-bottom: 2px;
 }  
 /*Print Styles*/
-@media print { 
-  * {-webkit-transition: none !important;transition: none !important;}
-}
-@media all {.page-break	{ display: none; }}
+ @media all {.page-break	{ display: none; }}
 @media print {.page-break	{display: block; page-break-before: always; }}
 @media print { 
  body {font-size:1.375em;-webkit-print-color-adjust: exact;}

@@ -4,11 +4,12 @@
 
 //{
 
-	$recipient_email 	= "sales@office24hours.com"; //recepient
+	//$recipient_email 	= "sales@office24hours.com"; recepient
 	//$recipient_email 	= "rsmodi9990@gmail.com";// recepient
-	//$recipient_email 	= "npweb110@gmail.com"; recepient
+	$recipient_email 	= "npweb110@gmail.com"; //recepient
 
-	$from_email 		= "info@office24hours.com"; //from email using site domain.
+	$from_email 		= "rsmodi9990@gmail.com";// from email using site domain.
+	//$from_email 		= "info@office24hours.com"; from email using site domain.
 
 	$subject			= "Inquiry received from Website"; //email subject line
 
@@ -68,7 +69,7 @@ tr:nth-child(even) {
 
     <td width="20%"><b>Name</b></td>
 
-    <td width="30%">'.filter_var($_POST["con_name"], FILTER_SANITIZE_STRING).'</td>
+    <td width="30%">'.filter_var($_POST["name"], FILTER_SANITIZE_STRING).'</td>
 
    
 
@@ -80,7 +81,7 @@ tr:nth-child(even) {
 
     <td><b>E-mail</b></td>
 
-    <td>'.filter_var($_POST["con_email"], FILTER_SANITIZE_STRING).'</td>
+    <td>'.filter_var($_POST["email"], FILTER_SANITIZE_STRING).'</td>
 
     
 
@@ -92,7 +93,7 @@ tr:nth-child(even) {
 
     <td><b>Subject</b></td>
 
-    <td>'.filter_var($_POST["con_subject"], FILTER_SANITIZE_STRING).'</td>
+    <td>'.filter_var($_POST["subject"], FILTER_SANITIZE_STRING).'</td>
 
     
 
@@ -102,9 +103,18 @@ tr:nth-child(even) {
 
   <tr>
 
-    <td><b>Message</b></td>
+    <td><b>Phone</b></td>
 
-    <td>'.filter_var($_POST["con_message"], FILTER_SANITIZE_STRING).'</td>
+    <td>'.filter_var($_POST["phone"], FILTER_SANITIZE_STRING).'</td>
+
+    
+
+  </tr>
+  <tr>
+
+    <td><b>message</b></td>
+
+    <td>'.filter_var($_POST["message"], FILTER_SANITIZE_STRING).'</td>
 
     
 

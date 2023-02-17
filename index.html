@@ -161,7 +161,7 @@
                     <div class="d-flex justify-content-between">
                         <div class="align-content-center pr-xl-3"><a href="index.html" class="logo"> <img src="./assets/logo.PNG"></a></div>
                         <div class="align-content-center px-3"><a href="index.html" class="logo"> <img src="./assets/lavish.PNG"></a></div>
-                        <div class="d-flex flex-column justify-content-end  flex-xl-grow-1">
+                        <div class="d-flex flex-column justify-content-start  flex-xl-grow-1">
                             <div class="ml-auto pl-xl-3">
 
                                 <!--<a href="#"><i class="fa fa-user  d-none d-xl-inline-block">&nbsp;</i>Login</a>-->
@@ -171,13 +171,13 @@
                                 &nbsp;&nbsp;|&nbsp;&nbsp;<a href="blog.html">Blog</a>
 
                             </div>
-                            <form id="search" action="#" method="post">
+                            <!--<form id="search" action="#" method="post">
                                 <div class="search-product py-2 pl-4 d-flex align-content-center">
 
                                     <input class="mr-auto form-control align-content-center" type="text" name="S1" placeholder="Enter keyword or item number here" style="border:1px solid #eee;" fdprocessedid="oliyym">
                                     <button class="btn btn-primary ml-auto trans-0-4 align-content-center" fdprocessedid="osmpda">Search</button>
                                 </div>
-                            </form>
+                            </form>-->
                         </div>
 
 
@@ -402,13 +402,101 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="text-center mt-4">Welcome to LAVISH Bath and Kitchen Showroom online gateway.  </h3>
-                    <p class="text-center my-2">We would be honored to assist you in your design, whether you are starting a renovation or building your dream home, we are here to help every step of the way.  From traditional, transitional, contemporary or ultra-modern at Lavish we offer a vast selection of bath and kitchen selections from today’s top manufacturers showcased in our Main Line Showroom or here online.  You can create your wish list and then meet with our Lavish specialists who understand the latest product trends, plus have the knowledge of the building and remodeling processes. We work with both trade professionals and homeowners. It is rewarding for us to consult and assist in bringing dreams to life while providing you with peace of mind and security in your selections.</p>
+                <div class="col-sm-6">
+                    <h3 class=" mt-4" style="text-align:justify">Welcome to LAVISH Bath and Kitchen Showroom online gateway.  </h3>
+                    <p class=" my-2" style="text-align:justify">We would be honored to assist you in your design, whether you are starting a renovation or building your dream home, we are here to help every step of the way.  From traditional, transitional, contemporary or ultra-modern at Lavish we offer a vast selection of bath and kitchen selections from today’s top manufacturers showcased in our Main Line Showroom or here online.  You can create your wish list and then meet with our Lavish specialists who understand the latest product trends, plus have the knowledge of the building and remodeling processes. We work with both trade professionals and homeowners. It is rewarding for us to consult and assist in bringing dreams to life while providing you with peace of mind and security in your selections.</p>
                     <hr>
                 </div>
+                <div class="col-sm-6">
+
+
+                    <!--<p class="lead">Use the form below for Inquiry or submit a question or comment.</p>-->
+                    <h3 class="mt-4">SCHEDULE APPOINTMENT</h3>
+                    <div class="mb-3"></div> 
+                    <form class="hidden-print" name="contactForm" method="post" action="#">
+                        <div class="row text-left">
+                          <div class="col-sm-6">
+
+                                <input type="hidden" id="verification" name="verification" value="244902">
+                                <input type="hidden" name="sendEmail" value="1">
+                                <div class="form-group required has-feedback">
+                                    <label class="control-label" for="name">Full Name</label>
+                                    <input name="name" id="name" class="form-control" type="text" data-error="Full Name is Required" placeholder="Full Name (required field)" value="" required="" fdprocessedid="b609c">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group required has-feedback">
+                                    <label class="control-label" for="email">Email Address</label>
+                                    <input id="email" name="email" class="form-control" type="email" data-error="Email Address is Required" placeholder="Email Address (required field)" required="" fdprocessedid="494om">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group has-feedback required">
+                                    <label class="control-label" for="subject">Subject</label>
+                                    <input name="subject" id="subject" class="form-control" type="text" value="" data-error="Please enter a subject" placeholder="required field (required field)" required="" spellcheck="false" data-ms-editor="true" fdprocessedid="oqg03m">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label" for="phone">Phone</label>
+                                    <input name="phone" id="phone" class="form-control" type="text" placeholder="(XXX) XXX-XXXX" fdprocessedid="bgjdv9">
+                                </div>
+
+
+
+                                <!--<div class="form-group has-feedback required">
+                    <label class="control-label" for="EMMailCheck"> Verification</label>
+                    <input id="EMMailCheck" name="EMMailCheck" type="text" class="form-control" data-match="#verification" data-error="Must match the 6 digits from below image" placeholder="Enter the 6 digits from below image" required="" spellcheck="false" data-ms-editor="true" fdprocessedid="ofy8t8">
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <img src="/CFFileServlet/_cf_captcha/_captcha_img-7687957760779621353.png" alt="" height="36" width="157">
+
+                </div>-->
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <input type="hidden" id="verification" name="verification" value="244902">
+                                <input type="hidden" name="sendEmail" value="1">
+                                <div class="form-group required has-feedback">
+                                    <label class="control-label" for="name">Date</label>
+                                    <input name="date" id="date" class="form-control" type="datetime-local" data-error="Date & Time Required" value="" required="" fdprocessedid="b609c">
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-6">
+
+                                <div class="form-group has-feedback required">
+                                    <label class="control-label" for="message">Message</label>
+                                    <textarea id="message" class="form-control" name="message" rows="3" data-error="You forgot to add a message" placeholder="Message (required field)" required="" spellcheck="false" data-ms-editor="true"></textarea>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-12 text-center">
+                                <div class="form-group">
+                                    <input class="btn btn-primary mt-auto" type="submit" id="checkBtn" value="Submit" fdprocessedid="p8x539">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
             </div>
-        </div>
+       
     </section>
 
 
@@ -1044,7 +1132,7 @@
         </div>-->
                                 </div>
 
-                                <div class="col-sm-6">
+                                <!--<div class="col-sm-6">
 
                                     <input type="hidden" id="verification" name="verification" value="244902">
                                     <input type="hidden" name="sendEmail" value="1">
@@ -1055,9 +1143,9 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                   
-                                </div>
+                                </div>-->
 
-                                <div class="col-sm-6">
+                                <div class="col-sm-12">
 
                                     <div class="form-group has-feedback required">
                                         <label class="control-label" for="message">Message</label>
@@ -1092,10 +1180,10 @@
                         <li><a href="about-us.html">About</a></li>
                         <li><a href="brands.html">Brands</a></li>
                         <li><a href="#">Contact A Lavish Specialist</a></li>
-                        <!--<li><a href="#">FAQ</a></li>-->
+                        <li><a href="privacy-policy.html">PRIVACY POLICY</a></li>
                         <!--<li><a href="#" target="_blank">Need More Plumbing Items</a></li>-->
                         <li><a href="index.html#inquiry">Help Center</a></li>
-                        <!--<li><a href="#">Site Map</a></li>-->
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
                     </ul>
                     <ul class="mt-4">
                         <li><strong>CONNECT</strong></li>
